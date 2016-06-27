@@ -1,0 +1,183 @@
+.white {
+    color: white !important;
+}
+
+.black {
+    color: black !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+.BasicSearch p {
+     margin: 0;
+ }
+
+img.pdf-icon {
+    width: 85px;
+    margin-left: -15px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+img.icon-xs {
+    width: 16px;
+}
+
+img.icon-s {
+    width: 24px;
+}
+
+img.icon-md {
+    width: 32px;
+}
+
+img.icon-lg {
+    width: 48px;
+}
+
+img.icon-xl {
+    width: 64px;
+}
+
+img.icon-xl-2 {
+    width: 78px;
+}
+
+img.icon-xl-3 {
+    width: 94px;
+}
+
+img.icon-xl-4 {
+    width: 110px;
+}
+
+img.icon-xxl {
+    width: 128px;
+}
+
+span.icon-xs,
+i.icon-xs {
+    font-size: 16px;
+}
+
+span.icon-s,
+i.icon-s {
+    font-size: 24px;
+}
+
+span.icon-md,
+i.icon-md {
+    font-size: 32px;
+}
+
+span.icon-lg,
+i.icon-lg {
+    font-size: 48px;
+}
+
+span.icon-xl,
+i.icon-xl {
+    font-size: 64px;
+}
+
+span.icon-xl-2,
+i.icon-xl-2 {
+    font-size: 78px;
+}
+
+span.icon-xl-3,
+i.icon-xl-3 {
+    font-size: 94px;
+}
+
+span.icon-xl-4,
+i.icon-xl-4 {
+    font-size: 110px;
+}
+
+span.icon-xxl,
+i.icon-xxl {
+    font-size: 128px;
+}
+
+.panel-left-info {
+    width: 60%;
+    float: left;
+}
+
+.equal-panel-heights.col-lg-12.col-md-12.col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.equal-panel-heights {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.center-vertical {
+    display: table;
+}
+
+.center-vertical h1,
+.center-vertical h2,
+.center-vertical h3,
+.center-vertical h4,
+.center-vertical h5,
+.center-vertical p {
+    vertical-align: middle;
+}
+
+.center-all {
+    display: table;
+    justify-content: center;
+    align-items: center;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.remarks-heading {
+    padding-right: 0;
+}
+
+.remarks-body {
+    padding-left: 0;
+}
+
+.active {
+    color: white !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.container-fluid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img.logo-image {
+    width: 45px;
+    position: relative;
+    top: -17px;
+}

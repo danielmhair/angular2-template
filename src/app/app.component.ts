@@ -26,6 +26,8 @@ import { BootstrapNavbarComponent, Link, RouterActive } from './components';
     require('../assets/css/ionicons.min.css'),
     require('../assets/css/margin-padding.css'),
     require('../assets/css/width.css'),
+    require('../assets/css/font-size.css'),
+    require('../assets/css/styles.css')
   ],
   template: `
     <bootstrap-navbar [rightLinks]="rightLinks" [leftLinks]="leftLinks" [brand]="brand"></bootstrap-navbar>
