@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a *ngIf="brand.internalLink" class="navbar-brand" router-active="active" [routerLink]="[brand.internalLink]">
+      <span class="fa fa-edit"></span> {{brand.name}}
+    </a>
+    <a *ngIf="!brand.internalLink" class="navbar-brand" [href]="brand.externalLink">
+      {{brand.name}}
+    </a>
+
+    <!-- Collect the nav links, forms , and other content for toggling -->
+    <ul class="nav navbar-nav">
+      <li class="nav-item" router-active="active" *ngFor="let item of leftLinks">
+        <a class="nav-link" *ngIf="item.internalLink" router-active="active" [routerLink]="[item.internalLink]">{{item.name}}</a>
+        <a class="nav-link" *ngIf="!item.internalLink" [href]="item.externalLink">{{item.name}}</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-xs-right">
+      <li class="nav-item" router-active="active" *ngFor="let item of rightLinks">
+        <a class="nav-link" *ngIf="item.internalLink" [routerLink]="[item.internalLink]">{{item.name}}</a>
+        <a class="nav-link" *ngIf="!item.internalLink" [href]="item.externalLink">{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
