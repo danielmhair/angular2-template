@@ -4,8 +4,6 @@
  */
 
 
-require(__dirname + '/../server/node-server');
-
 const webpack = require('webpack');
 const helpers = require('./helpers');
 

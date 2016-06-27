@@ -22,7 +22,10 @@ import { BootstrapNavbarComponent, Link, RouterActive } from './components';
   styles: [
     require('normalize.css'),
     require('./app.css'),
-    require('../assets/fonts/font-awesome.min.css')
+    require('../assets/fonts/font-awesome.min.css'),
+    require('../assets/css/ionicons.min.css'),
+    require('../assets/css/margin-padding.css'),
+    require('../assets/css/width.css'),
   ],
   template: `
     <bootstrap-navbar [rightLinks]="rightLinks" [leftLinks]="leftLinks" [brand]="brand"></bootstrap-navbar>
@@ -34,7 +37,8 @@ import { BootstrapNavbarComponent, Link, RouterActive } from './components';
 @RouteConfig([
   { path: '/',  name: 'Home',  component: Home, useAsDefault: true },
   // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-  { path: '/about', name: 'About', loader: () => require('es6-promise!./pages/about')('About') }
+  { path: '/about', name: 'About', loader: () => require('es6-promise!./pages/about')('About') },
+  { path: '/todos', name: 'Todos', loader: () => require('es6-promise!./pages/todos')('Todos') }
 ])
 export class App {
   loading = false;
@@ -43,7 +47,8 @@ export class App {
 
   rightLinks: Link[] = [
     new Link("Home", 'Home'),
-    new Link("About", 'About')
+    new Link("About", 'About'),
+    new Link("Todo List", 'Todos')
   ];
 
   leftLinks: Link[] = [];

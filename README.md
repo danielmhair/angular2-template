@@ -1,4 +1,65 @@
 # Template Angular 2, Typescript (with ES2016) and Bootstrap 4 compiled with Webpack 2
+
+## Get Started
+### Clone this project
+```bash
+git clone --depth 1 https://github.com/danielmhair/angular2-template.git <project-name>
+```
+### Checkout your desired starter project
+
+#### Simple Angular App without back-end
+You are finished! Cloning the project is all you needed.
+
+#### Angular App with NodeJS and MongoDB
+```bash
+git checkout -b nodejs
+```
+
+#### Angular App with NodeJS and SQLite (with OracleDB node module)
+Coming Soon...
+
+#### Angular App with Java Play
+Coming Soon...
+
+### Install dependencies
+#### Add required global libraries
+```bash
+npm install typings webpack-dev-server rimraf webpack -g --no-optional
+```
+
+These must be installed with admin priveledges. Another option would be to install these as dev dependencies. 
+
+```bash
+# ONLY if you can't install them globally
+npm install typings webpack-dev-server rimraf webpack --save-dev --no-optional
+```
+
+#### Add Node Module Dependencies
+```bash
+npm install --no-optional
+```
+
+For some reason, the node modules don't install properly unless you give the flag to not install optional dependencies.
+
+#### start the server
+```bash
+npm start
+```
+
+This is if you just want to start the server, but don't want to have it reload every time you change a file.
+
+#### Use Hot Module Replacement
+```bash
+npm run server:dev:hmr
+```
+
+This is handy when you want to update your project in live time. 
+When you save a file, this will recompile your code and refresh your browser.
+
+### Go to [http://localhost:3000](http://localhost:3000) in your browser
+
+Whether you did `npm run server` or `npm run server:dev:hmr`, it doesn't matter. To get to your site, go to `localhost:3000`.
+
 ## Tasks Remaining
 - [x] Change Directory structure to have a components folder and pages folder. 
 - [x] Add Navbar Component using Bootstrap. 

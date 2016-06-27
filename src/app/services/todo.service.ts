@@ -1,24 +1,18 @@
 import { Injectable } from "@angular/core";
 import { Http } from "@angular/http";
-import { Todo } from './Todo';
 
 @Injectable()
 export class TodoService {
-  private todos: Todo[];
+  public http: Http;
 
-  constructor(public http: Http) {
-
+  constructor(http: Http) {
+    this.http = http;
   }
 
-  getAll() {
+  public getAll() {
     console.log('Title#getData(): Get Data');
-    this.todos = this.http
+    return this.http
       .get('http://localhost:3001/api/todos')
-      .map(res => {
-        console.log(res);
-        console.log(res.json());
-        console.log(new Todo(res.json()));
-        return new Todo(res.json());
-      });
+      .map(res => res.json());
   }
 }

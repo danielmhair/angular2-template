@@ -1,0 +1,20 @@
+<md-card>
+  <form (ngSubmit)="addTodo()" autocomplete="off">
+    <md-card-title>
+      <md-input placeholder="Title" [(ngModel)]="newTodo.title" autofocus></md-input>
+      <md-input placeholder="Description" [(ngModel)]="newTodo.details" autofocus></md-input>
+      <button md-raised-button color="primary">Add Todo</button>
+    </md-card-title>
+    <md-card-content [hidden]="!newTodo.title && !newTodo.details">
+      <h4 class="margin-left-25">Preview of Todo</h4>
+      <md-card>
+        <md-card-title>{{newTodo.title}}</md-card-title>
+        <md-card-content>{{newTodo.details}}</md-card-content>
+      </md-card>
+    </md-card-content>
+  </form>
+</md-card>
+<md-card *ngFor="let todo of todos">
+  <md-card-title>{{todo.title}}</md-card-title>
+  <md-card-content>{{todo.details}}</md-card-content>
+</md-card>
