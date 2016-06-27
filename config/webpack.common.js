@@ -1,6 +1,10 @@
 /**
  * @author: @AngularClass
+ * @author: Daniel Hair <hair4@llnl.gov>
  */
+
+
+require(__dirname + '/../server/node-server');
 
 const webpack = require('webpack');
 const helpers = require('./helpers');

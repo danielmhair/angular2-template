@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Finish up NodeJS Template",
+    "details": "To finish NodeJS, make it so that it is getting todos from Mongo"
+  },
+  {
+    "title": "API on same port as Angular 2 App",
+    "details": "Make it so that the api is on the same port as angular's port. (See webpack-dev-proxy to see how)"
+  },
+  {
+    "title": "Todo Service",
+    "details": "Have a Service in Angular 2 talk to API"
+  },
+  {
+    "title": "Todo Page Component with Service",
+    "details": "Create a component page that will talk to the Todo Service"
+  },
+  {
+    "title": "Link from Home Page",
+    "details": "Have a link connecting the Todo list to the Home page"
+  }
+]
